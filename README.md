@@ -1,4 +1,4 @@
-# Flask API with MySQL and JWT Authentication
+#🔐 Flask API with MySQL and JWT Authentication
 
 This is a basic Flask application that demonstrates how to integrate **MySQL**, **Flask-SQLAlchemy** for database interaction, and **JWT (JSON Web Token)** for authentication. The application allows users to register, log in, and retrieve information about their subscription plans based on their roles.
 
