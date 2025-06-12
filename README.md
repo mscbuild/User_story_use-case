@@ -1,4 +1,12 @@
 # 🔐 Flask API with MySQL and JWT Authentication
+  ![](https://komarev.com/ghpvc/?username=mscbuild) 
+ ![](https://img.shields.io/github/license/mscbuild/e-learning) 
+ ![](https://img.shields.io/github/repo-size/mscbuild/e-learning)
+![](https://img.shields.io/badge/PRs-Welcome-green)
+![](https://img.shields.io/badge/code%20style-/sql/python-green)
+![](https://img.shields.io/github/stars/mscbuild)
+![](https://img.shields.io/badge/Topic-Github-lighred)
+![](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fmscbuild)
 
 This is a basic Flask application that demonstrates how to integrate **MySQL**, **Flask-SQLAlchemy** for database interaction, and **JWT (JSON Web Token)** for authentication. The application allows users to register, log in, and retrieve information about their subscription plans based on their roles.
 
