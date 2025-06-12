@@ -60,7 +60,7 @@ flask-mysql-jwt/
 └── venv/                      # Virtual environment (optional)
 ~~~
 
-#🌐 API Endpoints
+# 🌐 API Endpoints
 
 ***Register***
 
