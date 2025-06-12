@@ -16,7 +16,35 @@ This is a basic Flask application that demonstrates how to integrate **MySQL**, 
 ## Installation
 
 1. Clone the repository to your local machine:
-
-  ~~~bash
+ ~~~bash
    git clone https://github.com/mscbuild/User_story_use-case.git
  ~~~
+
+2 Create a virtual environment (optional but recommended):
+~~~bash
+python -m venv venv
+~~~
+
+3.Activate the virtual environment:
+
+- Windows:
+~~~bash
+venv\Scripts\activate
+~~~
+- MacOS/Linux:
+~~~bash
+  source venv/bin/activate
+~~~
+4.Install the required dependencies:
+~~~bash
+pip install -r requirements.txt
+~~~
+5.You will need a MySQL database for the application. Follow the steps below to set it up.
+
+# Setup MySQL Database
+
+_ Install MySQL on your local machine if you haven't already. You can download it from here.
+
+_ Create a database named flask_db (or any name you prefer) and the following tables:
+
+ 
