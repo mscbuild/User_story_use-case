@@ -13,7 +13,7 @@ This is a basic Flask application that demonstrates how to integrate **MySQL**, 
 - [Running the Application](#running-the-application)
 - [Contributing](#contributing)
 
-## Installation
+  ## 🛠️ Installation
 
 1. Clone the repository to your local machine:
  ~~~bash
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ~~~
 5.You will need a MySQL database for the application. Follow the steps below to set it up.
 
-# Setup MySQL Database
+# ✅ Setup MySQL Database
 
 - Install MySQL on your local machine if you haven't already. You can download it from here.
 
@@ -63,7 +63,7 @@ flask-mysql-jwt/
 └── venv/                      # Virtual environment (optional)
 ~~~
 
-# API Endpoints
+#🌐 API Endpoints
 
 ***Register***
 
@@ -129,7 +129,7 @@ Authorization: Bearer your_jwt_token
     ]
 }
 ~~~
-# Running the Application
+# ✨ Running the Application
 
 - Make sure MySQL is running and your database is set up as described above.
 
@@ -141,28 +141,28 @@ Authorization: Bearer your_jwt_token
 
 - Use an API testing tool like Postman or cURL to interact with the API.
 
-# Example: Register a User
+# 🔀 Example: Register a User
 
 ***POST /register***
 ~~~bash
 curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username": "john_doe", "password": "password123", "role": "premium"}'
 ~~~
 
-# Example: Login
+# 👤 Example: Login
 
 ***POST /login***
 ~~~bash
 curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"username": "john_doe", "password": "password123"}'
 ~~~
 
-# Example: Get Tariff
+# 👥 Example: Get Tariff
 
 ***GET /tariffs/1***
 ~~~bash
 curl -X GET http://127.0.0.1:5000/tariffs/1 -H "Authorization: Bearer your_jwt_token"
 ~~~
 
-# Contributing
+# 📢 Contributing
 
 We welcome contributions! If you have suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
@@ -176,4 +176,6 @@ We welcome contributions! If you have suggestions, improvements, or bug fixes, f
 
 - Open a pull request.
 
- 
+# 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
