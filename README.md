@@ -1,7 +1,7 @@
 # 🔐 Flask API with MySQL and JWT Authentication
   ![](https://komarev.com/ghpvc/?username=mscbuild) 
  ![](https://img.shields.io/github/license/mscbuild/e-learning) 
-  ![](https://img.shields.io/github/repo-size/mscbuild/e-learning)
+  ![](https://img.shields.io/github/repo-size/mscbuild/User_story_use-case)
 ![](https://img.shields.io/badge/PRs-Welcome-green)
 ![](https://img.shields.io/badge/code%20style-sql/python-green)
 ![](https://img.shields.io/github/stars/mscbuild)
@@ -13,27 +13,27 @@ This is a basic Flask application that demonstrates how to integrate **MySQL**, 
  ## 🛠️ Installation
 
 1. Clone the repository to your local machine:
- ~~~bash
+ ~~~ruby
    git clone https://github.com/mscbuild/User_story_use-case.git
  ~~~
 
 2 Create a virtual environment (optional but recommended):
-~~~bash
+~~~ruby
 python -m venv venv
 ~~~
 
 3.Activate the virtual environment:
 
 - Windows:
-~~~bash
+~~~ruby
 venv\Scripts\activate
 ~~~
 - MacOS/Linux:
-~~~bash
+~~~ruby
   source venv/bin/activate
 ~~~
 4.Install the required dependencies:
-~~~bash
+~~~ruby
 pip install -r requirements.txt
 ~~~
 5.You will need a MySQL database for the application. Follow the steps below to set it up.
@@ -45,13 +45,13 @@ pip install -r requirements.txt
 - Create a database named flask_db (or any name you prefer) and the following tables:
 
  3. Update the SQLALCHEMY_DATABASE_URI in app.py to reflect your MySQL credentials:
-~~~bash
+~~~ruby
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://username:password@localhost/flask_db'
 ~~~
 4. Run the application.
 
 # 💼 Project Structure
-~~~bash
+~~~ruby
 flask-mysql-jwt/
 │
 ├── app.py                    # Main application file
@@ -69,7 +69,7 @@ flask-mysql-jwt/
 Registers a new user. The user will be added to the database with a hashed password.
 
 ***Request Body:***
-~~~bash
+~~~ruby
 {
     "username": "john_doe",
     "password": "password123",
@@ -77,7 +77,7 @@ Registers a new user. The user will be added to the database with a hashed passw
 }
 ~~~
 ***Response:***
-~~~bash
+~~~ruby
 {
     "message": "User registered successfully"
 }
@@ -89,14 +89,14 @@ Registers a new user. The user will be added to the database with a hashed passw
 Authenticates the user and generates a JWT access token.
 
 ***Request Body:***
-~~~bash
+~~~ruby
 {
     "username": "john_doe",
     "password": "password123"
 }
 ~~~
 ***Response:***
-~~~bash
+~~~ruby
 {
     "access_token": "your_jwt_token"
 }
@@ -108,11 +108,11 @@ Authenticates the user and generates a JWT access token.
 Returns the current subscription plan for the user, based on their role. This endpoint requires JWT authentication.
 
 ***Request Header:***
-~~~bash
+~~~ruby
 Authorization: Bearer your_jwt_token
 ~~~
 ***Response:***
-~~~bash
+~~~ruby
 {
     "userId": 1,
     "tariffName": "Premium Plan",
@@ -131,7 +131,7 @@ Authorization: Bearer your_jwt_token
 - Make sure MySQL is running and your database is set up as described above.
 
 - Run the Flask application:
-  ~~~bash
+  ~~~ruby
   python app.py
 ~~~
 - The application will be running at http://127.0.0.1:5000/.
@@ -142,21 +142,21 @@ Authorization: Bearer your_jwt_token
 
 ***POST /register***
 
-~~~bash
+~~~ruby
 curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username": "john_doe", "password": "password123", "role": "premium"}'
 ~~~
 
 # 👤 Example: Login
 
 ***POST /login***
-~~~bash
+~~~ruby
 curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"username": "john_doe", "password": "password123"}'
 ~~~
 
 # 👥 Example: Get Tariff
 
 ***GET /tariffs/1***
-~~~bash
+~~~ruby
 curl -X GET http://127.0.0.1:5000/tariffs/1 -H "Authorization: Bearer your_jwt_token"
 ~~~
 
